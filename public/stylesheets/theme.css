@@ -3,7 +3,78 @@
   These only apply when using custom WYMeditor CSS.
 */
 
+body
+{
+
+  background:white url(images/stripe-background.png) repeat-x top left;
+  padding-top:0px;
+  font-family: Helvetica, san-serif;
+  color:#404040;
+}
+
+#wrapper
+{
+background: url(images/cloud-background.png) repeat-x top left;
+}
+
+
+a, a:hover, a:visited
+{
+  text-decoration:none;
+  color:#404040;
+}
 h1
 {
-  font-family: 'Nothing You Could Do', Arial, serif; font-weight: 400; ;
+  font-family: 'Nothing You Could Do', Arial, serif; font-weight: 400;
+  margin:0px;
+}
+
+header
+{
+ 
+  border:0px;
+  padding-bottom:100px;
+  margin:0px;
+  margin-left:40px;
+  margin-right:40px;
+  width:100%;
+  #padding:10px;
+  #padding-bottom:60px;
+}
+#page
+{
+
+  border:0px;
+    padding:10px;
+}
+
+footer
+{
+  background:white;
+    padding:40px;
+  border:0px;
+  
+}
+
+#menu
+{
+  position:absolute;
+  right:100px;
+  top:0px;
+
+}
+
+#menu a
+{
+color:white;
+}
+
+#pig
+{
+  width:25px;
+  height:25px;
+  position:absolute;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }

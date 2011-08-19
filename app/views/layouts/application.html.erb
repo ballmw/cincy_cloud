@@ -3,12 +3,14 @@
   <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
   <%= render :partial => "/shared/head" %>
   <body>
+  <img id="pig" src="images/pig_small.png"/>
     <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="page_container">
+    <div id="wrapper">
       <header>
         <%= render :partial => "/shared/header" -%>
       </header>
+    <div id="page_container">
       <section id='page'>
         <%= yield %>
       </section>
@@ -16,6 +18,7 @@
         <%= render :partial => "/shared/footer" -%>
       </footer>
     </div>
+        <div id="wrapper">
     <%= render :partial => "/shared/javascripts" %>
   </body>
 </html>
