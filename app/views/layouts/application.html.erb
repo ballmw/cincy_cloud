@@ -3,22 +3,41 @@
   <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
   <%= render :partial => "/shared/head" %>
   <body>
-  <img id="pig" src="images/pig_small.png"/>
     <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="wrapper">
-      <header>
+    <header>
+      <div class="container">
         <%= render :partial => "/shared/header" -%>
-      </header>
-    <div id="page_container">
-      <section id='page'>
+<div id="search">
+        <% form_tag search_url do -%>
+        <%= text_field_tag :query, {}, {:type => "search",
+                     :placeholder => "Search site for...", 
+                     :value => (params[:query] if params[:query])} %>
+        <%= submit_tag 'Go' %>
+        <% end %>
+</div>
+       </div>
+    </header>
+    <div class="text columns home sidebar">
+      <aside>
+        <section>
+          <h2><a href="http://www.twitter.com/CincyCloud">CincyCloud</a>
+            <img style="width:30px;height:30px;vertical-align:middle" src="http://a3.twimg.com/a/1314118012/images/logos/twitter_newbird_blue.png" width="30px" height="30px"/>
+          </h2>
+          <div id="tweets_container">
+            <%= image_tag "loading.gif", :id => 'twitter_loading', :alt => "Loading", :style => "display: none"%>
+          </div>
+        </section>
+      </aside>
+      <section>
         <%= yield %>
       </section>
+      
+    </div>
       <footer>
         <%= render :partial => "/shared/footer" -%>
       </footer>
-    </div>
-        <div id="wrapper">
+      
     <%= render :partial => "/shared/javascripts" %>
   </body>
 </html>
