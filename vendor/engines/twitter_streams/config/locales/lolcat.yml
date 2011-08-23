@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    twitter_streams:
+      title: Twitter Streams
+  admin:
+    twitter_streams:
+      actions:
+        create_new: CREATE NEW Twitter Stream
+        reorder: REORDR Twitter Streams
+        reorder_done: DUN REORDERIN Twitter Streams
+      records:
+        title: Twitter Streams
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Twitter Streams YET. CLICK "CREATE NEW Twitter Stream" 2 ADD UR FURST twitter stream.
+      twitter_stream:
+        view_live_html: VIEW DIS twitter stream LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS twitter stream
+        delete: REMOOV DIS twitter stream FOREVR
+  twitter_streams:
+    show:
+      other: OTHR Twitter Streams

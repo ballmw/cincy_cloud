@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    twitter_streams:
+      title: Twitter Streams
+  admin:
+    twitter_streams:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Twitter Stream
+        reorder: Réordonner les Twitter Streams
+        reorder_done: Fin de réordonnancement des Twitter Streams
+      records:
+        title: Twitter Streams
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Twitter Stream. Cliquer sur "Créer un(e) nouve(au/l/lle) Twitter Stream" pour créer votre premi(er/ère) twitter stream.'
+      twitter_stream:
+        view_live_html: Voir ce(t/tte) twitter stream <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) twitter stream
+        delete: Supprimer définitivement ce(t/tte) twitter stream
+  twitter_streams:
+    show:
+      other: Autres Twitter Streams

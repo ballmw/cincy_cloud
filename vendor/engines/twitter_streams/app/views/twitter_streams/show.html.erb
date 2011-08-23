@@ -1,0 +1,11 @@
+  <section>
+    <ul>
+    <% @tweets.each do |tweet| %>
+      <li>
+        <%= auto_link(tweet.text).html_safe%>
+      </li>
+    <% end %>
+    </ul>
+  </section>
+
+

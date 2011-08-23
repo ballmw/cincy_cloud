@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="twitter_streams">
+    <% @twitter_streams.each do |twitter_stream| %>
+      <li>
+        <%= link_to twitter_stream.username, twitter_stream_path(twitter_stream) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

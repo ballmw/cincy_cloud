@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    twitter_streams:
+      title: Twitter Streams
+  admin:
+    twitter_streams:
+      actions:
+        create_new: Add New Twitter Stream
+        reorder: Reorder Twitter Streams
+        reorder_done: Done Reordering Twitter Streams
+      records:
+        title: Twitter Streams
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Twitter Streams yet. Click "Add New Twitter Stream" to add your first twitter stream.
+      twitter_stream:
+        view_live_html: View this twitter stream live <br/><em>(opens in a new window)</em>
+        edit: Edit this twitter stream
+        delete: Remove this twitter stream forever
+  twitter_streams:
+    show:
+      other: Other Twitter Streams

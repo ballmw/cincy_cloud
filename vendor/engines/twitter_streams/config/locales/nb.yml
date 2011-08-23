@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    twitter_streams:
+      title: Twitter Streams
+  admin:
+    twitter_streams:
+      actions:
+        create_new: Lag en ny Twitter Stream
+        reorder: Endre rekkefølgen på Twitter Streams
+        reorder_done: Ferdig å endre rekkefølgen Twitter Streams
+      records:
+        title: Twitter Streams
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Twitter Streams enda. Klikk på "Lag en ny Twitter Stream" for å legge til din første twitter stream.
+      twitter_stream:
+        view_live_html: Vis hvordan denne twitter stream ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne twitter stream
+        delete: Fjern denne twitter stream permanent
+  twitter_streams:
+    show:
+      other: Andre Twitter Streams

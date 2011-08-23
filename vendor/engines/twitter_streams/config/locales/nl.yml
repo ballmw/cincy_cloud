@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    twitter_streams:
+      title: Twitter Streams
+  admin:
+    twitter_streams:
+      actions:
+        create_new: Maak een nieuwe Twitter Stream
+        reorder: Wijzig de volgorde van de Twitter Streams
+        reorder_done: Klaar met het wijzingen van de volgorde van de Twitter Streams
+      records:
+        title: Twitter Streams
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Twitter Streams. Druk op 'Maak een nieuwe Twitter Stream' om de eerste aan te maken.
+      twitter_stream:
+        view_live_html: Bekijk deze twitter stream op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze twitter stream
+        delete: Verwijder deze twitter stream voor eeuwig
+  twitter_streams:
+    show:
+      other: Andere Twitter Streams

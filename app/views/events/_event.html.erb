@@ -1,0 +1,106 @@
+<% 
+	featured ||= false
+	individual ||= false
+	archive ||= false
+	category ||= false
+-%>
+
+<%= div_for event, :class => 'individual_event' do -%>
+
+	<section class="event_image">
+  	<%= image_fu event.image, "150x150#c" %>
+	</section>
+
+	<% unless individual -%>
+  <h2><%= link_to event.title, event %></h2>
+	<% end -%>
+	<section>
+		<% if individual -%>
+    	<%=raw event.description %>
+		<% else -%>
+			<%= simple_format(truncate strip_tags(event.description), :length => 200) %>
+		<% end -%>
+  </section>
+	<section class="start_end">
+    <span class="label">Starts:</span>
+    <%= event.start_at.strftime('%b %e, %Y %l:%M %p') %><br>
+    <span class="label">Ends:</span>
+		<%= event.end_at.strftime('%b %e, %Y %l:%M %p') %>
+  </section><!-- .start_end -->
+
+  <section class="venue">
+    <span class="label">Location:</span>
+		<%= event.venue_name %>
+  </section>
+
+  <% if event.venue_address.present? -%>
+    <section class="address">
+      <span class="label">Address:</span>
+        <%= event.venue_address %>
+    </section>
+
+	  <section id="event_map">
+			<iframe width="500" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=<%= CGI::escape(event.venue_address) %>&amp;z=14&amp;output=embed"></iframe>
+		</section><!-- #event_map -->
+  <% end -%>
+
+<% unless archive -%>
+	<% unless event.ticket_price.blank? -%>
+	  <section class="price">
+      <span class="label">Ticket Price:</span>
+	      <%=number_to_currency event.ticket_price %>        
+	  </section>
+	<% end -%>
+	<% unless event.ticket_link.blank? -%>
+	  <section class="ticket">
+      <span class="label">Ticket Link:</span>
+	      <%=auto_link(event.ticket_link).html_safe %>        
+	  </section>
+	<% end -%>
+<% end -%>
+
+
+  
+
+  
+<% if individual -%>
+	<section id="share_this_event">
+	  <ul>
+	    <li class="facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<%= request.url %>" layout="box_count" show_faces="false" width="55" font=""></fb:like></li>
+	    <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+	  </ul>
+	</section>
+
+  <nav id="prevnext_nav">
+		<% if event.prev.present? -%>
+		  <%= link_to event_path(event.prev), :class => "prev button" do -%>
+  			<h3>Previous</h3>
+  			<h4><%=truncate event.prev.title, :length => 38 %></h4>
+  		<% end -%>
+	  <% else -%>
+  	  <span class="prev disabled">
+  	    <h3>Previous</h3>
+				<h4>&nbsp;</h4>
+  	  </span>
+	  <% end -%>
+	
+		<%= link_to events_path, :class => "home button" do -%>
+			<h3>Events</h3>
+			<h4>Home</h4>
+		<% end -%>
+		
+		<% if event.next.present? -%>
+		  <%= link_to event_path(event.next), :class => "next button" do -%>
+  			<h3>Next</h3>
+  			<h4><%=truncate event.next.title, :length => 38 %></h4>
+  		<% end -%>
+    <% else -%>
+  	  <span class="next disabled">
+  	    <h3>Next</h3>
+				<h4>&nbsp;</h4>
+  	  </span>
+	  <% end -%>
+	</nav><!--#event_nav-->
+<% end -%>
+
+<% end -%>
