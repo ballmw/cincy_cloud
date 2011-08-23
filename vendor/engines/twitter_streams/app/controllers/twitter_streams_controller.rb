@@ -15,8 +15,8 @@ class TwitterStreamsController < ApplicationController
     @twitter_stream = TwitterStream.find(params[:id])
     #puts @twitter_stream.username
     #puts @twitter_stream.num_to_display
-    twitter = Twitter::Base.new( 'ballmw', 'Celia2004' )
-    @tweets = twitter.user_timeline(@twitter_stream.username).first(@twitter_stream.num_to_display)
+    #twitter = Twitter::Base.new( 'ballmw', 'Celia2004' )
+    @tweets = Twitter.user_timeline(@twitter_stream.username).first(@twitter_stream.num_to_display)
     
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @twitter_stream in the line below:
