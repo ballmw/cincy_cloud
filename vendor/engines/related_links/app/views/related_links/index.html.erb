@@ -1,0 +1,8 @@
+
+  <ul id="related_links">
+    <% @related_links.each do |related_link| %>
+      <li>
+        <a href='<%= related_link.href %>'><%=related_link.name %></a>
+      </li>
+    <% end %>
+  </ul>

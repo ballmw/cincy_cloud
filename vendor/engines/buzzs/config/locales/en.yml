@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    buzzs:
+      title: Buzzs
+  admin:
+    buzzs:
+      actions:
+        create_new: Add New Buzz
+        reorder: Reorder Buzzs
+        reorder_done: Done Reordering Buzzs
+      records:
+        title: Buzzs
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Buzzs yet. Click "Add New Buzz" to add your first buzz.
+      buzz:
+        view_live_html: View this buzz live <br/><em>(opens in a new window)</em>
+        edit: Edit this buzz
+        delete: Remove this buzz forever
+  buzzs:
+    show:
+      other: Other Buzzs

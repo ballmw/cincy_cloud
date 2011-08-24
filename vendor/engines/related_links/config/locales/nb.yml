@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    related_links:
+      title: Related Links
+  admin:
+    related_links:
+      actions:
+        create_new: Lag en ny Related Link
+        reorder: Endre rekkefølgen på Related Links
+        reorder_done: Ferdig å endre rekkefølgen Related Links
+      records:
+        title: Related Links
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Related Links enda. Klikk på "Lag en ny Related Link" for å legge til din første related link.
+      related_link:
+        view_live_html: Vis hvordan denne related link ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne related link
+        delete: Fjern denne related link permanent
+  related_links:
+    show:
+      other: Andre Related Links

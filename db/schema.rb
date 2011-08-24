@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110823201429) do
+ActiveRecord::Schema.define(:version => 20110824132445) do
 
   create_table "blog_categories", :force => true do |t|
     t.string   "title"
@@ -56,6 +56,16 @@ ActiveRecord::Schema.define(:version => 20110823201429) do
   end
 
   add_index "blog_posts", ["id"], :name => "index_blog_posts_on_id"
+
+  create_table "buzzs", :force => true do |t|
+    t.string   "search"
+    t.integer  "number_to_display"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "buzzs", ["id"], :name => "index_buzzs_on_id"
 
   create_table "event_categories", :force => true do |t|
     t.string   "name"
@@ -193,6 +203,18 @@ ActiveRecord::Schema.define(:version => 20110823201429) do
   end
 
   add_index "refinery_settings", ["name"], :name => "index_refinery_settings_on_name"
+
+  create_table "related_links", :force => true do |t|
+    t.string   "name"
+    t.string   "href"
+    t.text     "description"
+    t.boolean  "open_in_new_window"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "related_links", ["id"], :name => "index_related_links_on_id"
 
   create_table "resources", :force => true do |t|
     t.string   "file_mime_type"

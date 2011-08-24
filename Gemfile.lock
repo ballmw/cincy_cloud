@@ -1,6 +1,8 @@
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-buzzs (1.0)
+    refinerycms-related_links (1.0)
     refinerycms-twitter_streams (1.0)
 
 GEM
@@ -191,9 +193,11 @@ DEPENDENCIES
   jquery-rails
   refinerycms (~> 1.0.4)
   refinerycms-blog (~> 1.6.1)
+  refinerycms-buzzs (= 1.0)!
   refinerycms-calendar (~> 1.1.0)
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
+  refinerycms-related_links (= 1.0)!
   refinerycms-search (~> 0.9.8)
   refinerycms-twitter_streams (= 1.0)!
   sqlite3

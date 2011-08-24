@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    related_links:
+      title: Related Links
+  admin:
+    related_links:
+      actions:
+        create_new: Add New Related Link
+        reorder: Reorder Related Links
+        reorder_done: Done Reordering Related Links
+      records:
+        title: Related Links
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Related Links yet. Click "Add New Related Link" to add your first related link.
+      related_link:
+        view_live_html: View this related link live <br/><em>(opens in a new window)</em>
+        edit: Edit this related link
+        delete: Remove this related link forever
+  related_links:
+    show:
+      other: Other Related Links

@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    related_links:
+      title: Related Links
+  admin:
+    related_links:
+      actions:
+        create_new: Maak een nieuwe Related Link
+        reorder: Wijzig de volgorde van de Related Links
+        reorder_done: Klaar met het wijzingen van de volgorde van de Related Links
+      records:
+        title: Related Links
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Related Links. Druk op 'Maak een nieuwe Related Link' om de eerste aan te maken.
+      related_link:
+        view_live_html: Bekijk deze related link op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze related link
+        delete: Verwijder deze related link voor eeuwig
+  related_links:
+    show:
+      other: Andere Related Links

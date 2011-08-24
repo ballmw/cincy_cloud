@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    buzzs:
+      title: Buzzs
+  admin:
+    buzzs:
+      actions:
+        create_new: Lag en ny Buzz
+        reorder: Endre rekkefølgen på Buzzs
+        reorder_done: Ferdig å endre rekkefølgen Buzzs
+      records:
+        title: Buzzs
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Buzzs enda. Klikk på "Lag en ny Buzz" for å legge til din første buzz.
+      buzz:
+        view_live_html: Vis hvordan denne buzz ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne buzz
+        delete: Fjern denne buzz permanent
+  buzzs:
+    show:
+      other: Andre Buzzs

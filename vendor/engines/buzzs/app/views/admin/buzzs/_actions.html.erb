@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::BuzzsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_buzzs_path
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_buzz_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::BuzzsController.sortable? and Buzz.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Buzzs"),
+                 admin_buzzs_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Buzzs"),
+                 admin_buzzs_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

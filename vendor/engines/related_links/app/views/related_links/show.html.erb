@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @related_link.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @related_link.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Href</h1>
+    <p>
+      <%=raw @related_link.href %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @related_link.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Open In New Window</h1>
+    <p>
+      <%=raw @related_link.open_in_new_window %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="related_links">
+      <% @related_links.each do |related_link| %>
+        <li>
+          <%= link_to related_link.name, related_link_path(related_link) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

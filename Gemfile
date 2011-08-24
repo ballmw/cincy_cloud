@@ -63,3 +63,6 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 gem "twitter", "~> 1.6.2"
 gem 'refinerycms-twitter_streams', '1.0', :path => 'vendor/engines'
+
+gem 'refinerycms-related_links', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-buzzs', '1.0', :path => 'vendor/engines'

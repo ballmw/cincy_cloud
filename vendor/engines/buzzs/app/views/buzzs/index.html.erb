@@ -1,0 +1,8 @@
+  <ul id="buzz">
+    <% @tweets.each do |tweet| %>
+      <li>
+        <a href=''><img src='<%= tweet.profile_image_url%>'></a>
+        <%= auto_link(tweet.text).html_safe%>
+      </li>
+    <% end %>
+  </ul>

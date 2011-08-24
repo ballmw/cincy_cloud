@@ -155,7 +155,7 @@ body.topics.whos-using-redis ul:first-of-type li img { vertical-align: middle; m
   #commands nav a.current { padding: 2px 4px; }
   #commands ul { padding-top: 10px; } }
 
-#buzz { text-align: right; }
+
 #buzz h2, #buzz ul { text-align: left; }
 #buzz ul { margin: 7px 0; }
 #buzz li { margin: 0 0 8px 0; padding-left: 34px; position: relative; min-height: 26px; }
@@ -179,8 +179,9 @@ outline:none;
 
 #search
 {
+  line-height: 45px;
   float:right;
-  
+  height:45px;
 }
 .columns.sidebar > aside
 {

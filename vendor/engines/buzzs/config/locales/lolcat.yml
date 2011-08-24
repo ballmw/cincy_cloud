@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    buzzs:
+      title: Buzzs
+  admin:
+    buzzs:
+      actions:
+        create_new: CREATE NEW Buzz
+        reorder: REORDR Buzzs
+        reorder_done: DUN REORDERIN Buzzs
+      records:
+        title: Buzzs
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Buzzs YET. CLICK "CREATE NEW Buzz" 2 ADD UR FURST buzz.
+      buzz:
+        view_live_html: VIEW DIS buzz LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS buzz
+        delete: REMOOV DIS buzz FOREVR
+  buzzs:
+    show:
+      other: OTHR Buzzs
