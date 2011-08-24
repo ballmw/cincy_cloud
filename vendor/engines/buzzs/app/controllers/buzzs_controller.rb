@@ -10,8 +10,8 @@ class BuzzsController < ApplicationController
     puts ENV['APIGEE_TWITTER_API_ENDPOINT']
     if(ENV['APIGEE_TWITTER_API_ENDPOINT'])
       Twitter.configure do |config|
-        config.endpoint = ENV['APIGEE_TWITTER_API_ENDPOINT']
-        config.search_endpoint = ENV['APIGEE_TWITTER_SEARCH_API_ENDPOINT']
+        config.endpoint = 'http://' +ENV['APIGEE_TWITTER_API_ENDPOINT']
+        config.search_endpoint = 'http://' +ENV['APIGEE_TWITTER_SEARCH_API_ENDPOINT']
       end
     end
     
