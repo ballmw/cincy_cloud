@@ -7,7 +7,6 @@ class BuzzsController < ApplicationController
     @buzzs = find_all_buzzs
     @tweets = []
     
-    puts ENV['APIGEE_TWITTER_API_ENDPOINT']
     if(ENV['APIGEE_TWITTER_API_ENDPOINT'])
       Twitter.configure do |config|
         config.endpoint = 'http://' +ENV['APIGEE_TWITTER_API_ENDPOINT']
