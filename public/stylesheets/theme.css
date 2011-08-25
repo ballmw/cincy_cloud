@@ -215,8 +215,9 @@ width: 100%;
   font-style: italic;
   margin: 0px 5px;
   border: 1px #CCCCCC solid;
-  border-radius: 10px;
+  
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  behavior:url(PIE.htc);
+  border-radius: 10px;
+  behavior:url(/PIE.htc);
 }
