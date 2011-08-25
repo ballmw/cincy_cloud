@@ -180,7 +180,7 @@ outline:none;
 #search
 {
   line-height: 45px;
-  
+  float:right;  
   height:45px;
 }
 .columns.sidebar > aside
@@ -207,4 +207,15 @@ width: 100%;
 .label
 {
   font-weight:bold;
+}
+
+#query
+{
+  color: #CCCCCC;
+  font-style: italic;
+  margin: 0px 5px;
+  border: 1px #CCCCCC solid;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
