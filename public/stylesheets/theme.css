@@ -226,19 +226,19 @@ width: 100%;
   color: #FFFFFF;
   background-color: #5e91a4;
   /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e91a4), to(#446979));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#499FD8), to(#007CC2));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #5e91a4, #446979);
+  background: -webkit-linear-gradient(top, #499FD8, #007CC2);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #5e91a4, #446979);
+  background: -moz-linear-gradient(top, #499FD8, #007CC2);
   /* IE 10 */
-  background: -ms-linear-gradient(top, #5e91a4, #446979);
+  background: -ms-linear-gradient(top, #499FD8, #007CC2);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #5e91a4, #446979);
+  background: -o-linear-gradient(top, #499FD8, #007CC2);
   
-  background: linear-gradient(top, #5e91a4, #446979);
+  background: linear-gradient(top, #499FD8, #007CC2);
   
-  -pie-background: linear-gradient(#5e91a4, #446979); /*PIE*/
+  -pie-background: linear-gradient(#499FD8, #007CC2); /*PIE*/
   
   border: 1px #5e91a4 solid;
   border-radius: 10px;
@@ -251,19 +251,19 @@ width: 100%;
   color: #FFFFFF;
   background-color: #5e91a4;
   /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#446979), to(#5e91a4));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#007CC2), to(#499FD8));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #446979, #5e91a4);
+  background: -webkit-linear-gradient(top, #007CC2, #499FD8);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #446979, #5e91a4);
+  background: -moz-linear-gradient(top, #007CC2, #499FD8);
   /* IE 10 */
-  background: -ms-linear-gradient(top, #446979, #5e91a4);
+  background: -ms-linear-gradient(top, #007CC2, #499FD8);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #446979, #5e91a4);
+  background: -o-linear-gradient(top, #007CC2, #499FD8);
   
-  background: linear-gradient(top, #446979, #5e91a4);
+  background: linear-gradient(top, #007CC2, #499FD8);
   
-  -pie-background: linear-gradient(#446979, #5e91a4); /*PIE*/
+  -pie-background: linear-gradient(#007CC2, #499FD8); /*PIE*/
   
   behavior:url(/PIE.htc);
 }
