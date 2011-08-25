@@ -7,6 +7,7 @@
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <header>
       <div class="container">
+        <img src="/images/pig_small_clear.png">
         <%= render :partial => "/shared/header" -%>
 <div id="search">
         <% form_tag search_url do -%>
@@ -21,11 +22,15 @@
     <div class="text columns home sidebar">
       <aside>
         <section>
+          <h2>Related Links</h2>
+          <div id="links_container">
+            <%= image_tag "loading.gif", :id => 'links_loading', :alt => "Loading", :style => "display: none"%>
+          </div>
           <h2><a href="http://www.twitter.com/CincyCloud">CincyCloud</a>
             <img style="width:30px;height:30px;vertical-align:middle" src="http://a3.twimg.com/a/1314118012/images/logos/twitter_newbird_blue.png" width="30px" height="30px"/>
           </h2>
           <div id="tweets_container">
-            <%= image_tag "loading.gif", :id => 'twitter_loading', :alt => "Loading", :style => "display: none"%>
+            <%= image_tag "loading.gif", :id => 'tweets_loading', :alt => "Loading", :style => "display: none"%>
           </div>
           <h2>Buzz</h2>
           <div id="buzz_container">
