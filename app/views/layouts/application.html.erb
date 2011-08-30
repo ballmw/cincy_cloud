@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <%= render :partial => "/shared/html_tag" %>
-  <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
-  <%= render :partial => "/shared/head" %>
-  <body>
-    <%= site_bar -%>
-    <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <header>
-      <div class="container">
-        <img src="/images/pig_small_clear.png">
-        <%= render :partial => "/shared/header" -%>
-<div id="search">
+<% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
+<%= render :partial => "/shared/head" %>
+<body>
+  <%= site_bar -%>
+  <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+  <header>
+    <div class="container">
+      <img src="/images/pig_small_clear.png">
+      <%= render :partial => "/shared/header" -%>
+      <div id="search">
         <% form_tag search_url do -%>
         <%= text_field_tag :query, {}, {:type => "search",
-                     :placeholder => "Search site for...", 
-                     :value => (params[:query] if params[:query])} %>
+        :placeholder => "Search site for...",
+        :value => (params[:query] if params[:query])} %>
         <%= submit_tag 'Go', :class => "button" %>
         <% end %>
-</div>
-       </div>
-    </header>
-    <div class="text columns home sidebar">
-      <aside>
-        <section>
-          <h2>Related Links</h2>
-          <div id="links_container">
-            <%= image_tag "loading.gif", :id => 'links_loading', :alt => "Loading", :style => "display: none"%>
-          </div>
-          <h2><a href="http://www.twitter.com/CincyCloud">CincyCloud</a>
-            <img style="width:30px;height:30px;vertical-align:middle" src="http://a3.twimg.com/a/1314118012/images/logos/twitter_newbird_blue.png" width="30px" height="30px"/>
-          </h2>
-          <div id="tweets_container">
-            <%= image_tag "loading.gif", :id => 'tweets_loading', :alt => "Loading", :style => "display: none"%>
-          </div>
-          <h2>Buzz</h2>
-          <div id="buzz_container">
-            <%= image_tag "loading.gif", :id => 'buzz_loading', :alt => "Loading", :style => "display: none"%>
-          </div>
-        </section>
-      </aside>
+      </div>
+    </div>
+  </header>
+  <div class="text columns home sidebar">
+    <aside>
       <section>
-        <%= yield %>
+        <h2>Related Links</h2>
+        <div id="links_container">
+          <ul id="related_links">
+            <% @related_links.each do |related_link| %>
+            <li>
+              <a href='<%= related_link.href %>'><%=related_link.name %></a>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+        <h2><a href="http://www.twitter.com/CincyCloud">CincyCloud</a>
+          <img style="width:30px;height:30px;vertical-align:middle" src="http://a3.twimg.com/a/1314118012/images/logos/twitter_newbird_blue.png" width="30px" height="30px"/>
+        </h2>
+        <div id="tweets_container">
+          <%= image_tag "loading.gif", :id => 'tweets_loading', :alt => "Loading", :style => "display: none"%>
+        </div>
+        <!--
+        <h2>Buzz</h2>
+        <div id="buzz_container">
+          <%= image_tag "loading.gif", :id => 'buzz_loading', :alt => "Loading", :style => "display: none"%>
+        </div>
+        -->
       </section>
-      
+    </aside>
+    <section>
+      <%= yield %>
+    </section>
+
     </div>
       <footer>
         <%= render :partial => "/shared/footer" -%>

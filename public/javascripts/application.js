@@ -97,6 +97,7 @@ var twitter = {
     }
 };
 
+/*
 var links = {
     container: $('#links_container'),
     loading_image: $('#links_loading'),
@@ -145,8 +146,8 @@ var links = {
         }
     }
 };
-  
+*/
   twitter.initialize();
-  buzz.initialize();
-  links.initialize();
+  //buzz.initialize();
+  //links.initialize();
 });

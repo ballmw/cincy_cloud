@@ -66,3 +66,5 @@ gem 'refinerycms-twitter_streams', '1.0', :path => 'vendor/engines'
 
 gem 'refinerycms-related_links', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-buzzs', '1.0', :path => 'vendor/engines'
+gem 'cache_method'
+
